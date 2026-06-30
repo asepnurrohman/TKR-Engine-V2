@@ -74,7 +74,15 @@ if(module){
     }
 
     module.render();
+const currentModule=
 
+Engine.module(this.current);
+
+if(currentModule){
+
+    currentModule.destroy();
+
+}
 }
     }
 
