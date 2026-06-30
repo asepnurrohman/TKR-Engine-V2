@@ -1,0 +1,13 @@
+{
+  "name": "tkr-engine-v2",
+  "version": "0.1.0-alpha",
+  "description": "Framework Bahan Ajar Interaktif berbasis Google Apps Script",
+  "author": "Asep",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "echo Development Mode",
+    "build": "node build/build.js",
+    "test": "echo No tests yet"
+  }
+}
