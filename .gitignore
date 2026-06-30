@@ -1,0 +1,22 @@
+# Node
+node_modules/
+
+# Build
+dist/
+build/dist/
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Env
+.env
+
+# Apps Script
+.clasp.json
