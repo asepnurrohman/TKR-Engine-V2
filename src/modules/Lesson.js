@@ -1,16 +1,38 @@
 class LessonModule extends Module{
 
-    constructor(){
+constructor(){
 
-        super("lesson");
+super("lesson");
 
-    }
+}
 
-    render(){
+render(){
 
-        super.render();
+super.render();
 
-    }
+document.getElementById(
+
+"lesson"
+
+).innerHTML=
+
+`
+
+<h1>
+
+Lesson
+
+</h1>
+
+<p>
+
+Coming Soon
+
+</p>
+
+`;
+
+}
 
 }
 
