@@ -137,7 +137,13 @@
         );
 
         loadTheme();
+Engine.ui.registerAll();
 
+Engine.ui.open(
+
+"dashboard"
+
+);
     }
 
     /* ======================================================
@@ -158,17 +164,23 @@
 
     navItems.forEach(button=>{
 
-        button.addEventListener(
+       navItems.forEach(button=>{
 
-            "click",
+button.onclick=()=>{
 
-            ()=>{
+setActiveMenu(button);
 
-                setActiveMenu(button);
+Engine.ui.open(
 
-            }
+button.innerText
 
-        );
+.toLowerCase()
+
+);
+
+};
+
+});
 
     });
 
