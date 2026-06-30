@@ -63,7 +63,19 @@ class Router {
         }
 
         location.hash = "#" + name;
+const module = Engine.module(name);
 
+if(module){
+
+    if(!module.initialized){
+
+        module.init();
+
+    }
+
+    module.render();
+
+}
     }
 
     /**
