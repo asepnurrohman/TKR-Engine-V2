@@ -10,7 +10,11 @@ class DashboardModule extends Module{
 
         super.init();
 
-        console.log("Dashboard initialized");
+        console.log(
+
+            "Dashboard Init"
+
+        );
 
     }
 
@@ -18,15 +22,57 @@ class DashboardModule extends Module{
 
         super.render();
 
-        console.log("Dashboard render");
+        document.getElementById(
 
-    }
+            "dashboard"
 
-    destroy(){
+        ).innerHTML=
 
-        super.destroy();
+        `
 
-        console.log("Dashboard destroy");
+        <h1>
+
+            Dashboard
+
+        </h1>
+
+        <div class="card-grid">
+
+            <div class="card">
+
+                <h3>
+
+                    Engine
+
+                </h3>
+
+                <p>
+
+                    READY
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Version
+
+                </h3>
+
+                <p>
+
+                    ${Engine.version}
+
+                </p>
+
+            </div>
+
+        </div>
+
+        `;
 
     }
 
@@ -34,8 +80,8 @@ class DashboardModule extends Module{
 
 Engine.registerModule(
 
-    "dashboard",
+"dashboard",
 
-    new DashboardModule()
+new DashboardModule()
 
 );
