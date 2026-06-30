@@ -164,21 +164,19 @@ Engine.ui.open(
 
     navItems.forEach(button=>{
 
-       navItems.forEach(button=>{
+       navItems.forEach(item=>{
 
-button.onclick=()=>{
+    item.onclick=()=>{
 
-setActiveMenu(button);
+        setActiveMenu(item);
 
-Engine.ui.open(
+        Engine.router.navigate(
 
-button.innerText
+            item.dataset.route
 
-.toLowerCase()
+        );
 
-);
-
-};
+    };
 
 });
 
