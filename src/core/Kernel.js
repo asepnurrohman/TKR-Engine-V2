@@ -98,5 +98,15 @@
     };
 
     global.Engine = Engine;
+Engine.open = function(name){
 
+    this.router.navigate(name);
+
+};
+
+Engine.close = function(name){
+
+    this.ui.hide(name);
+
+};
 })(this);
