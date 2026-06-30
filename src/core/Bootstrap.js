@@ -17,6 +17,8 @@ class Bootstrap {
         console.group("Bootstrap");
 
         Engine.boot();
+        
+        Engine.devtools.init();
 
         this.registerPages();
 
